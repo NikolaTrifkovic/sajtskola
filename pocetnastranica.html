@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Osnovna Skola Sveti Sava Zvornik</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pocetnastranica.css" type="text/css">
+  <script src="pocetnastranica.js"></script>
+    </head>
+    
+<body>
+        <div id="wrapp2">
+    <h1 id="hprvi">Osnovna Skola Sveti Sava Zvornik</h1>
+    </div>
+    <div id="wrapp3"></div>
+    
+    <div id="wrapp1">
+    <img src="slika1.jpg" id="slika1">
+    <img src="slika2.jpg" class="slike2">    
+    <img src="slika3.jpg" class="slike2">   
+    <img src="slika4.jpg" class="slike2">   
+    </div>
+  
+    
+    <div id="wrapp4">
+        <ul id="prvaul">
+            <a href=""><li class="prvalista">Pocetna stranica</li></a>
+            <a href=""><li class="prvalista">Registrujte se</li></a>
+            <a href=""><li class="prvalista">Prijavite se</li></a>
+            <a href=""><li class="prvalista">Galerija skole</li></a>
+            <a href=""><li class="prvalista">Aktivnosti skole</li></a>
+        </ul>
+    
+    </div>
+    
+    <script>
+    var slika1 = document.getElementById('slika1');
+    var slike2 = document.getElementsByClassName('slike2');
+        for(var i=0;i <slike2.length;i++) {
+            slike2[i].addEventListener('click',slikeprve);
+        }
+        function slikeprve(){
+            var slikaa = this.getAttribute('src');
+            slika1.setAttribute('src',slikaa);
+        }
+    
+    </script>
+  
+    
+    
+    
+    </body>
+
+</html>
